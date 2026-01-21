@@ -18,6 +18,7 @@ jobs:
       enable-commit-email-check: true
       enable-commit-msg-check: true
       commit-msg-check-extra-options: '{"body-char-limit": 60, "sub-char-limit": 50, "check-blank-line": true}'
+      semgrep-cli-options: '--config auto --error --severity=ERROR'
     permissions:
       contents: read
       security-events: write
